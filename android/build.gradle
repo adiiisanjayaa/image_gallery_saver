@@ -19,6 +19,11 @@ rootProject.allprojects {
         google()
         mavenCentral()
     }
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core-ktx:1.10.1' // Adjust as needed
+        }
+    }
 }
 
 apply plugin: 'com.android.library'
